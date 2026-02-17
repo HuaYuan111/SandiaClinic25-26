@@ -1,0 +1,14 @@
+------------------------------------------------
+Job started at: Sun Feb 15 19:19:10 EST 2026
+------------------------------------------------
+[1771220604.045189] [r262:14049:0]          mpool.c:42   UCX  WARN  object 0x28061c0 was not returned to mpool ucp_requests
+[1771220604.045189] [r262:14050:0]          mpool.c:42   UCX  WARN  object 0x3c28080 was not returned to mpool ucp_requests
+[1771220604.045189] [r262:14051:0]          mpool.c:42   UCX  WARN  object 0x2ee5580 was not returned to mpool ucp_requests
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
+------------------------------------------------
+Job ended at: Mon Feb 16 00:43:24 EST 2026
+Total Runtime: 5h 24m 14s
+------------------------------------------------

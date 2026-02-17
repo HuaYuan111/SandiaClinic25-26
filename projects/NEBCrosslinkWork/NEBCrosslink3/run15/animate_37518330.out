@@ -1,0 +1,16 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"ase"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "ase"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/ocean/projects/mat250017p/desantos/projects/NEBCrosslinkWork/NEBCrosslink3/run16/IDPP.py", line 8, in <module>
+    from ase.io import read, write
+ModuleNotFoundError: No module named 'ase'

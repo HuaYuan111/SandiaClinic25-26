@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/ocean/projects/mat250017p/desantos/projects/NEBCrosslinkWork/NEBCrosslink3/run16/IDPP.py", line 9, in <module>
+    from ase.neb import NEB
+ModuleNotFoundError: No module named 'ase.neb'

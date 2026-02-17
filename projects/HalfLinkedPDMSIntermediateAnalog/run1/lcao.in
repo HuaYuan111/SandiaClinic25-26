@@ -1,0 +1,87 @@
+do setup
+do iters
+do force
+do relax
+do post
+setup data
+title
+HalfLinkedPDMSIntermediateAnalog
+functional
+ PBE-SP
+spin polarization
+ 2.0
+dimension of system (0=cluster ... 3=bulk)
+ 0
+coordinates
+CARTESIAN
+scale
+ 1
+primitive lattice vectors
+  55.0000000000     0.00000000000     0.00000000000
+  0.00000000000     45.0000000000     0.00000000000
+  0.00000000000     0.00000000000     50.0000000000
+grid dimensions
+  184  150  167
+atom types
+ 4
+atom file
+ O = O.atm
+atom file
+ H = H.atm
+atom file
+ C = C.atm
+atom file
+ Si = Si.atm
+number of atoms in unit cell
+  26
+atom, type, position;
+AT1   O    -2.2815228778  -0.1168417579   3.5659129405
+AT2   Si   -0.3137890004   1.4561094633   5.2074423177
+AT3   Si   -5.0490265881  -1.2867333229   3.4630173604
+AT4   C     1.5240262153   3.6307872337   3.1138148950
+AT5   C     3.0105602670   2.1279826412   1.1729907156
+AT6   H     2.8409951540   4.7682699980   4.2857095695
+AT7   H     4.0610022522   3.4306841487  -0.0916328132
+AT8   H     4.3754337595   0.8417973389   2.1169844360
+AT9   Si    0.3178519113  -3.0598632180  -2.4957611131
+AT10  O    -1.1222515728  -0.4500004497  -2.8931326940
+AT11  O     2.8939074817  -3.0329157254  -4.0449962731
+AT12  Si    5.4875375038  -1.5904311865  -4.5352667836
+AT13  Si   -3.5409118657   0.9154399607  -4.0397617321
+AT14  H     0.1872151537   4.9134954402   2.1308550247
+AT15  H    -6.8859347353   0.6214930831   4.3034729938
+AT16  H    -1.7031722390   3.0027179041   7.0509645059
+AT17  H    -5.1655092981  -3.5599980981   5.0555272455
+AT18  H     1.4003247521  -0.2781109737   6.5392645027
+AT19  H    -2.9409238643   1.9343235219  -6.5540988517
+AT20  H    -5.6193647887  -0.9195784606  -4.2308508241
+AT21  H    -4.3611663283   2.9278847550  -2.3089239047
+AT22  H     4.9859286374   1.1255585933  -4.8421771814
+AT23  H     7.2313766461  -2.0504660812  -2.4220240051
+AT24  H     6.6141165491  -2.5169827360  -6.9000509885
+AT25  H     0.7890172920  -3.5174792634   0.2039203314
+AT26  H    -5.6656063837  -1.9693212472   0.8440083183
+origin offset
+ 0 0 0
+end setup phase data
+run phase input data
+history
+ 8
+no ges
+states
+ 60
+temperature
+ 0.002
+iterations
+ 300
+blend ratio
+0.100
+convergence criterion
+0.05
+geometry relaxation
+gmethod
+ broyden
+gsteps
+ 200
+end geometry relaxation
+end run phase data
