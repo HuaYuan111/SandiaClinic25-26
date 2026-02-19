@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=HalfLinkedPDMSanalog
+#SBATCH --job-name=NEBa
 #SBATCH -p RM-shared
 #SBATCH -N 1
-#SBATCH --ntasks=5
+#SBATCH --ntasks=25
 #SBATCH -t 9:00:00
 
 module purge
@@ -15,7 +15,7 @@ ulimit -s unlimited
 # 3. Handle the library paths
 export LD_LIBRARY_PATH=$MKLROOT/lib/intel64:$LD_LIBRARY_PATH
 
-cd /ocean/projects/mat250017p/hyuan5/SandiaClinic25-26/projects/HalfLinkedPDMSanalog
+cd /ocean/projects/mat250017p/desantos/projects/NEBCrosslinkWork/NEBanalog_a
 
 # --- TIMER START ---
 START_TIME=$(date +%s)
@@ -25,7 +25,7 @@ echo "------------------------------------------------"
 
 # Use --overload-allowed if you really want to run 60 tasks on fewer than 60 cores
 # But for DFT (SeqQuest), it's better to run 1 task per 1 physical core.
-mpirun -np $SLURM_NTASKS --bind-to none /ocean/projects/mat250017p/hyuan5/SandiaClinic25-26/seqquest_parallel/quest_265a.x
+mpirun -np $SLURM_NTASKS --bind-to none /ocean/projects/mat250017p/desantos/seqquest_parallel/quest_265a.x
 
 # --- TIMER END ---
 END_TIME=$(date +%s)
